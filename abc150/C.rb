@@ -13,6 +13,26 @@
 # P1 P2 ... PN
 # Q1 Q2 ... QN
 
+# 入力例
+# 3
+# 1 3 2
+# 3 1 2
+
+# 123, 132, 213, 231, 312, 321
+# 1,   2,   3,    4,   5,  6
+#
+#
+# ans = 3
+
 # n = gets.split.map(&:to_i)
 # array = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
 
+N = gets.to_i
+P = gets.split.map(&:to_i)
+Q = gets.split.map(&:to_i)
+
+array = N.times.map { |n| n + 1 }
+permutation = array.permutation.to_a
+
+a = permutation.index(P) + 1
+b = permutation.index(Q) + 1

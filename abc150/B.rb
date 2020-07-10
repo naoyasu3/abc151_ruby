@@ -10,6 +10,18 @@
 # N
 # S
 
+# N = 10
+# S = ZABCDBABCQ
+# ans = 2
 # n = gets.split.map(&:to_i)
 # array = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
 
+# irb(main):002:0> str.include?("123")
+# => true
+
+# string = "hoge fuga hage hige hanage h?ge"
+# p string.scan(/h[a-z]*ge/).size # => 4
+
+N = gets
+S = gets
+print S.scan('ABC').size
