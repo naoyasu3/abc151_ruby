@@ -21,3 +21,9 @@
 
 # n = gets.split.map(&:to_i)
 # array = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
+
+c = gets.chomp
+alfa = ('a'.. 'z').to_a
+
+num = alfa.index(c);
+puts alfa[num + 1]

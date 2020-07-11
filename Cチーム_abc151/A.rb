@@ -11,18 +11,21 @@
 # 出力
 # アルファベット順で C の次の文字を出力せよ。
 
-# 入力例
+# 入力例/Cチーム_abc151 copy/A.rb
 # a
 
 # 出力例
 # b
-
+#/Cチーム_abc151 copy/A.rb
 #a の次は b です。
 
 # n = gets.split.map(&:to_i)
 # array = readlines.map(&:chomp!).map { |e| e.split.map(&:to_i) }
+alphabet = gets[0]
+li = ('a'..'z').to_a
+i = li.index(alphabet)
+puts li[i + 1]
 
-ALPHA = ('a'..'z').to_a
-C = gets[0]
-index = ALPHA.find_index(C)
-puts ALPHA[index + 1]
+
+
+
